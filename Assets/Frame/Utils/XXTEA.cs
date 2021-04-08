@@ -1,19 +1,4 @@
-﻿/**********************************************************\
-|                                                          |
-| XXTEA.cs                                                 |
-|                                                          |
-| XXTEA encryption algorithm library for .NET.             |
-|                                                          |
-| Encryption Algorithm Authors:                            |
-|      David J. Wheeler                                    |
-|      Roger M. Needham                                    |
-|                                                          |
-| Code Author:  Ma Bingyao <mabingyao@gmail.com>           |
-| LastModified: Mar 10, 2015                               |
-|                                                          |
-\**********************************************************/
-
-namespace DH.Frame.Res
+﻿namespace Frame.Res
 {
 	using System;
 	using System.Text;

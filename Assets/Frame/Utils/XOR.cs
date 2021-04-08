@@ -1,4 +1,4 @@
-﻿namespace DH.Frame.Res
+﻿namespace Frame.Res
 {
 	public class XOR
 	{

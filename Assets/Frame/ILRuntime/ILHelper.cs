@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 
-namespace DH.Frame.IL
+namespace Frame
 {
     public static class ILHelper
     {
@@ -136,7 +136,7 @@ namespace DH.Frame.IL
             #endregion
 
             #region Event 事件系统
-            //appdomain.DelegateManager.RegisterMethodDelegate<DH.Frame.IL.EventArgsClassInheritanceAdaptor.EventArgsAdaptor>();
+            //appdomain.DelegateManager.RegisterMethodDelegate<Frame.IL.EventArgsClassInheritanceAdaptor.EventArgsAdaptor>();
             #endregion
 
             appdomain.DelegateManager.RegisterMethodDelegate<System.Boolean, System.Int32, System.Int32>();
@@ -153,7 +153,7 @@ namespace DH.Frame.IL
             appdomain.DelegateManager.RegisterMethodDelegate<UnityEngine.Object>();
             appdomain.DelegateManager.RegisterMethodDelegate<UnityEngine.Sprite>(); //Atlas Mgr
             appdomain.DelegateManager.RegisterMethodDelegate<System.UInt32>();
-            //appdomain.DelegateManager.RegisterMethodDelegate<DH.Frame.ThreadMgr.ThreadJob<ReadOnlyCollectionsExtensions.Wrappers.ReadOnlyDictionary<System.Int32, ILRuntime.Runtime.Intepreter.ILTypeInstance>>>();
+            //appdomain.DelegateManager.RegisterMethodDelegate<Frame.ThreadMgr.ThreadJob<ReadOnlyCollectionsExtensions.Wrappers.ReadOnlyDictionary<System.Int32, ILRuntime.Runtime.Intepreter.ILTypeInstance>>>();
 
             #endregion
 

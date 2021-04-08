@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DH.Frame.ThreadMgr
+namespace Frame.ThreadMgr
 {
 	public class ThreadJobDispatcherCenter : MonoBehaviour
 	{

@@ -1,5 +1,5 @@
-﻿using DH.Frame.Res;
-using DH.Frame.ThreadMgr;
+﻿using Frame.Res;
+using Frame.ThreadMgr;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

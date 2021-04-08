@@ -1,10 +1,10 @@
-﻿using DH.Frame.ThreadMgr;
+﻿using Frame.ThreadMgr;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace DH.Frame.Res
+namespace Frame.Res
 {
 	public class FileUtils
 	{

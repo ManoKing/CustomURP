@@ -1,15 +1,15 @@
 {
     "name": "Game",
     "references": [
-        "3rd",
         "Frame"
     ],
-    "optionalUnityReferences": [],
     "includePlatforms": [],
     "excludePlatforms": [],
-    "allowUnsafeCode": true,
-    "overrideReferences": true,
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
-    "defineConstraints": []
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

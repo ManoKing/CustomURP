@@ -3,7 +3,7 @@ using ILRuntime.Runtime.Enviorment;
 using ILRuntime.Runtime.Intepreter;
 using System;
 
-namespace DH.Frame.IL
+namespace Frame
 {
 	[ILAdapter]
 	public class ExceptionClassInheritanceAdaptor : CrossBindingAdaptor

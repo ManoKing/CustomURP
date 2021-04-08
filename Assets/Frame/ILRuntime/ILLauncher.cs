@@ -1,6 +1,4 @@
-﻿using DH.Frame.IL;
-using DH.Frame.Res;
-using System;
+﻿using System;
 using System.Collections.Generic;
 #if ILRuntime
 using System.IO;
@@ -64,7 +62,7 @@ namespace Frame
                 this.appDomain = new ILRuntime.Runtime.Enviorment.AppDomain();
                 this.dllStream = new MemoryStream(assBytes);
                 this.pdbStream = new MemoryStream(pdbBytes);
-                //this.pdbStream = null;//TODO 调试文件 出错加载会报错out of Memory
+                //this.pdbStream = null;//调试文件 出错加载会报错
                 this.appDomain.LoadAssembly(this.dllStream, this.pdbStream, new ILRuntime.Mono.Cecil.Pdb.PdbReaderProvider());
                 
                 ILHelper.InitILRuntime(this.appDomain);

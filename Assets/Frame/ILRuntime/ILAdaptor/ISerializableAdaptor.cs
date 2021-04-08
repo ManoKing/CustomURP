@@ -4,7 +4,7 @@ using ILRuntime.Runtime.Intepreter;
 using System;
 using System.Runtime.Serialization;
 
-namespace DH.Frame.IL
+namespace Frame
 {
 	[ILAdapter]
 	public class ISerializableAdaptorClassInheritanceAdaptor : CrossBindingAdaptor

@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 #endif
 
-namespace DH.Frame.ThreadMgr
+namespace Frame.ThreadMgr
 {
 	public class ThreadEx
 	{

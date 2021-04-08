@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DH.Frame.IL
+namespace Frame
 {
 	[AttributeUsage(AttributeTargets.Class)]
 	public class ILAdapterAttribute : Attribute

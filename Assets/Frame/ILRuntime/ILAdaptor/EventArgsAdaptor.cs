@@ -2,7 +2,7 @@
 using ILRuntime.Runtime.Intepreter;
 using System;
 
-namespace DH.Frame.IL
+namespace Frame
 {
 	[ILAdapter]
 	public class EventArgsClassInheritanceAdaptor : CrossBindingAdaptor

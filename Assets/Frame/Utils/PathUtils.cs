@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using UnityEngine;
 
-namespace DH.Frame.Res
+namespace Frame.Res
 {
 	internal class PathUtils
 	{

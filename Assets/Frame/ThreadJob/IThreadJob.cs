@@ -1,4 +1,4 @@
-﻿namespace DH.Frame.ThreadMgr
+﻿namespace Frame.ThreadMgr
 {
 	public interface IThreadJob
 	{
