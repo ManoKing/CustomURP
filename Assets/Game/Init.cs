@@ -8,9 +8,8 @@ namespace Game
     {
         public static void Awake()
         {
-            Debug.LogError("Go Go Go");
+            Debug.LogError("Hot Fix Start");
         }
-
     }
 }
 

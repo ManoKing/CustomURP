@@ -1,14 +1,17 @@
 {
     "name": "Frame",
     "references": [
-        "3rd"
+        "ILRuntime",
+        "Unity.Addressables",
+        "Unity.ResourceManager"
     ],
-    "optionalUnityReferences": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": true,
     "overrideReferences": true,
     "precompiledReferences": [],
     "autoReferenced": true,
-    "defineConstraints": []
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

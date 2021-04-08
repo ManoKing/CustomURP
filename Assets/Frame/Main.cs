@@ -4,19 +4,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Main : MonoBehaviour
+namespace Frame
 {
-    // Start is called before the first frame update
-    void Start()
+    public class Main : MonoBehaviour
     {
-        ResMgr.Init();
-        ThreadJob.Init();
-        ILLauncher.Instance.Init();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        void Start()
+        {
+            ILLauncher.Instance.Init();
+        }
     }
 }
+
+
