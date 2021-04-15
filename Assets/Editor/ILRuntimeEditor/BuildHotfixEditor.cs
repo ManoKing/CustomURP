@@ -16,14 +16,14 @@ public class Startup
 	public static string IL_HotFixFile_PDB = "Assets/Res/Base/Dll/hotfix.pdb.bytes";
 
 
-	private const string RuntimeMode = "设置/加密/是否自动混淆DLL";
+	//private const string RuntimeMode = "设置/加密/是否自动混淆DLL";
 	private const string ScriptAssembliesDir = "";
 
 	static Startup()
 	{
 		///TODO 调用为了防止没有注册过 编译完成事件，调用两次为了防止改变其状态值
-		EditorApplication.ExecuteMenuItem(RuntimeMode);
-		EditorApplication.ExecuteMenuItem(RuntimeMode);
+		//EditorApplication.ExecuteMenuItem(RuntimeMode);
+		//EditorApplication.ExecuteMenuItem(RuntimeMode);
 	}
 
 	public static bool CompareFile(string filePath1, string filePath2)
@@ -100,31 +100,31 @@ public class Startup
 		Debug.Log($"复制Hotfix.dll, Hotfix.pdb到Assets/DLL/完成");
         */
 	}
-
-	[MenuItem(RuntimeMode)]
-	public static void MixModel()
-	{
-		var isMixCode = !Menu.GetChecked(RuntimeMode);
-		EditorPrefs.SetBool(isMixCodeKey, isMixCode);
-		CompilingFinishedCallback.RemoveAll();
-		if (isMixCode)
-		{
-			CompilingFinishedCallback.Set<Startup>("MixCode");
-		}
-		else
-		{
-			CompilingFinishedCallback.Set<Startup>("CopyDll");
-		}
-		Menu.SetChecked(RuntimeMode, isMixCode);
-	}
-
-	[MenuItem(RuntimeMode, true)]
-	public static bool MixModelCheck()
-	{
-		var isMixCode = EditorPrefs.GetBool(isMixCodeKey);
-		Menu.SetChecked(RuntimeMode, isMixCode);
-		return true;
-	}
+	//
+	//[MenuItem(RuntimeMode)]
+	//public static void MixModel()
+	//{
+	//	var isMixCode = !Menu.GetChecked(RuntimeMode);
+	//	EditorPrefs.SetBool(isMixCodeKey, isMixCode);
+	//	CompilingFinishedCallback.RemoveAll();
+	//	if (isMixCode)
+	//	{
+	//		CompilingFinishedCallback.Set<Startup>("MixCode");
+	//	}
+	//	else
+	//	{
+	//		CompilingFinishedCallback.Set<Startup>("CopyDll");
+	//	}
+	//	Menu.SetChecked(RuntimeMode, isMixCode);
+	//}
+	//
+	//[MenuItem(RuntimeMode, true)]
+	//public static bool MixModelCheck()
+	//{
+	//	var isMixCode = EditorPrefs.GetBool(isMixCodeKey);
+	//	Menu.SetChecked(RuntimeMode, isMixCode);
+	//	return true;
+	//}
 
 	public static void ProcessCommand(string command, string argument)
 	{

@@ -17,6 +17,12 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 36b8e117f3e5dd04693f7399efb94b98
   m_SerializeEntries:
+  - m_GUID: 89ba9ace22b124d4a9831d178da38ec4
+    m_Address: UI/Login
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: abdd8918eec0bb748b9e2e4a1460553b
     m_Address: Dll/hotfix.dll
     m_ReadOnly: 0
