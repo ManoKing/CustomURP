@@ -10,14 +10,14 @@ namespace Game
     {
         public async static Task Awake()
         {
-            Debug.LogError("Hot Fix Start");
+            Debug.Log("Hot Fix Start");
             await Login();
         }
         // TODO
         public async static Task Login()
         {
             var obj = await ResourceMgr.Instance.LoadAssetAsync<GameObject>("UI/Login");
-            GameObject.Instantiate(obj, UIRoot.Instance.transform.GetChild(0));
+            GameObject.Instantiate(obj, UIRoot.Instance.GetParent(1).transform);
         }
     }
 }
